@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.flex{
+    display: flex;
+    justify-content: center;
+}
+div{
+    width: 100px;
+    height: 100px;
+    transition: all 10s;
+}
+img{
+    width: 100px;
+    height: 100px;
+    animation: rotateimg 10s alternate infinite;
+    position: absolute;
+}
+@keyframes rotateimg{
+    0%{
+        top: 0;
+    }
+    50%{
+        top: 70px;
+    }
+    100%{
+        top: 0;
+    }
+}
